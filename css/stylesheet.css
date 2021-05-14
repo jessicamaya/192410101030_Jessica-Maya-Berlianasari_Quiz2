@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --pinktua: #FF3B9D;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.form-container{
+    background-color: #ffb6c1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-big-card{
+    background-color: #FEFEFE;
+    box-shadow: 1px 1px #A9A9A9 ;
+    width: 120vh;
+    height: 70vh;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+}
+
+.form-card-left-picture {
+    background-image: url("../img/card-fill.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.form-content {
+    background-color: #FEFEFE;
+    padding: 7% 3% 7% 10%;
+    width: 50%;
+}
+
+.form-title {
+    color: #000000;
+    font-size: 25pt;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.form-box {
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.form-box:focus {
+    outline: unset;
+}
+
+.alert {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+.alert .alert-link {
+    font-weight: bold;
+}
+
+.alert > p,
+.alert > ul {
+    margin-bottom: 0;
+}
+
+.alert > p + p {
+    margin-top: 5px;
+}
+
+
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+.alert-danger hr {
+    border-top-color: #e4b9c0;
+}
+
+.alert-danger .alert-link {
+    color: #843534;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.alert-success hr {
+    border-top-color: #c9e2b3;
+}
+
+.alert-success .alert-link {
+    color: #2b542c;
+}
+
+.form-login {
+    font-weight: 500;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 40px;
+}
+
+.background {
+    background-color: #ffb6c1;;
+}
+
+
+/* Header */
+
+.navbar {
+    position: absolute;
+    color: white;
+    width: 100%;
+    background-color: #ff77c1;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15pt;
+}
+
+.navbar-kiri {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-kanan {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    background-image: url("../img/logoalgoin.png");
+    background-position: center;
+    background-size: cover;
+    width: 110px;
+    height: 50px;
+}
+
+.navbar-menu-list {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+li>a {
+    padding: 0px 20px;
+}
+
+.navbar-segitiga {
+    background-image: url('../img/navbar-triangle-down.png');
+    background-position: center;
+    background-size: cover;
+    width: 10px;
+    height: 7px;
+    margin-left: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Selamat Datang (Halaman Masuk) */
+
+.selamatdatang-container {
+    padding-top: 120px;
+    width: 100%;
+}
+
+.selamatdatang-container-atas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selamatdatang-salam {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.selamatdatang-nama {
+    padding-top: 20px;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.selamatdatang-tawaran {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+/* Open Menu */
+.menu-akun.show {
+    display: block;
+}
+
+.menu-akun {
+    display:none;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 10px 50px 10px 10px;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    color: black;
+}
+
+.menu-akun-list {
+    list-style-type: none;
+}
+
+.menu-akun-list-item {
+    padding: 5px 0;
+}
+
+.menu-akun-list-item a {
+    color: black;
+}
+
+.menu-akun-list-item a:visited {
+    color: black;
+}
